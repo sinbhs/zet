@@ -120,7 +120,7 @@ button::after, .btn_group a::after {content: ''; display: block; position: absol
         #main #caution .caution_icon .btn_group_m a {width:134px; height: 36px; line-height: 36px; font-size: 14px; font-weight: 500; color:#757575; padding: 0; margin-right: 7px;}
         #main #caution .caution_icon .btn_group_m a:active, #main #caution .caution_icon .btn_group_m a:hover, #main #caution .caution_icon .btn_group_m a:focus, #main #caution .caution_icon .btn_group_m a.active {color:#fff;}
         #main #caution .caution_icon .btn_group_m a::after {border: 0.15em solid #D9D9D9; border-radius: 7px; z-index: -1;}
-        #main #caution .caution_icon .btn_group_m a:active::after, #main #caution .caution_icon .btn_group_m a:hover::after, #main #caution .caution_icon .btn_group_m a:focus::after, #main #caution .caution_icon .btn_group_m a.active::after { border-color: #E5150B; background-color: #E5150B;}
+        #main #caution .caution_icon .btn_group_m a:active::after, #main #caution .caution_icon .btn_group_m a:hover::after, #main #caution .caution_icon .btn_group_m a:focus::after, #main #caution .caution_icon .btn_group_m a.active::after {border-color: #E5150B; background-color: #E5150B;}
         /* swiper */
         #main #caution .caution_icon .btn_group_pc {display: none;}
         #main #caution .caution_icon .pc_notification {display: none;}
@@ -159,8 +159,8 @@ button::after, .btn_group a::after {content: ''; display: block; position: absol
     #main #location .map .jeju.active a div {width: 78px; padding:5px 0 17px; position: absolute; z-index: 2; top: -52px; left: 5px; background: url(../images/location_pin.png) no-repeat left top/contain; text-align: center; color:#fff; font-size: 18px; font-weight: 700;}
     #main #location .map .daejeon.active {background: url(../images/daejeon.png) no-repeat right bottom; background-size: 100%;}
     #main #location .map .daejeon.active a div {width: 78px; padding: 3px 0 12px; position: absolute; z-index: 2; top: -51px; left: -22px; background: url(../images/location_pin.png) no-repeat left top/contain; text-align:center; color:#fff; font-size: 14px; font-weight: 700; line-height: 16px;}
-    #main #location .btn_group .btn-lg.active {color: #fff; font-weight: 500;}
-    #main #location .btn_group .btn-lg.active::after {border-color: #E5150B; background-color: #E5150B; z-index: -1;}
+    #main #location .btn_group .btn-lg.active, #main #location .btn_group .btn-lg:focus, #main #location .btn_group .btn-lg:hover, #main #location .btn_group .btn-lg:active {color: #fff; font-weight: 500;}
+    #main #location .btn_group .btn-lg.active::after, #main #location .btn_group .btn-lg:focus::after, #main #location .btn_group .btn-lg:hover::after, #main #location .btn_group .btn-lg:active::after {border-color: #E5150B; background-color: #E5150B; z-index: -1;}
     #main #location .btn_group .btn_jeju {margin-right: 14px;}
 
 /* section 5. coupon */
