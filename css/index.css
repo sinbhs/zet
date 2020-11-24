@@ -66,13 +66,13 @@ button::after, .btn_group a::after {content: ''; display: block; position: absol
     #main #title .txt h2 {max-width: 299px; width: 100%; height: 166px; margin:0 auto; background: url(../images/title.png) no-repeat left bottom/contain; text-indent: -9999px;}
     #main #title .txt h3 {margin-top:10px; font-size: 16px; line-height: 32px; font-weight: 600;}
     #main #title .txt p {margin-top: 10px; font-size: 14px; font-weight: 100; line-height: 22px;}
-        /* title btn_group */
-        #main #title .txt .btn_group {margin-top:40px;}
-        #main #title .txt .btn_group .btn-group-lg>.btn, .btn-lg {width: 47%; height:51px; background-color: transparent; border:none; border-radius: 10px; font-size:13px; color:#fff; position: relative;}
-        #main #title .txt .btn_group span {padding: 5px 0 5px 30px; font-weight: 700;}
-        #main #title .txt .btn_group .google_play {margin-right: 4%;}
-        #main #title .txt .btn_group .google_play span {background: url(../images/google.png) no-repeat left 3px;}
-        #main #title .txt .btn_group .app_store span {background: url(../images/app.png) no-repeat left 3px;}
+    /* title btn_group */
+    #main #title .txt .btn_group {margin-top:40px;}
+    #main #title .txt .btn_group .btn-group-lg>.btn, .btn-lg {width: 47%; height:51px; background-color: transparent; border:none; border-radius: 10px; font-size:13px; color:#fff; position: relative;}
+    #main #title .txt .btn_group span {padding: 5px 0 5px 30px; font-weight: 700;}
+    #main #title .txt .btn_group .google_play {margin-right: 4%;}
+    #main #title .txt .btn_group .google_play span {background: url(../images/google.png) no-repeat left 3px;}
+    #main #title .txt .btn_group .app_store span {background: url(../images/app.png) no-repeat left 3px;}
 
 /* section 2. how to */
 #main #how_to {width: 100%; padding-top:46px; margin-bottom: 60px; text-align: center;}
@@ -80,7 +80,7 @@ button::after, .btn_group a::after {content: ''; display: block; position: absol
     #main #how_to .how_to_txt h3 {font-size: 38px; font-weight: 700; line-height: 48px; background: url(../images/how_to.png) no-repeat center top; background-size: 22px 27px; padding-top:34px;}
     #main #how_to .how_to_txt h3 span {color:#E5150B;}
     #main #how_to .how_to_txt h3 .br_none {display: none;}
-    #main #how_to .how_to_txt p {font-size: 14px; line-height: 22px; margin-top: 10px;}
+    #main #how_to .how_to_txt p {color: #000; font-size: 14px; line-height: 22px; margin-top: 10px;}
     /* how to slide */
     /* javascript part - 가현언니.....스와이퍼 화이팅..! 임의로 설정해둬서 수정 필수ㅠ */
     #main #how_to .how_to_slide {position: relative; margin-top: 30px;}
@@ -193,3 +193,71 @@ footer {background-color: #f5f5f5; padding: 24px 26px; font-size: 12px;}
     footer .email {margin-top: 25px; padding-left: 22px; background: url(../images/icon_footer_email.png) no-repeat left 5px; background-size: 15px 11px; color: #999;}
     /* copyright */
     footer .copyright {margin-top: 5px; color:#999;}
+
+/* --------- Tablet --------- */
+@media screen and (min-width:768px) {
+    /*---- Tablet header ----*/
+    /* nav */
+    .navbar-default .container .navbar-header {height: 96px;}
+        /* logo */
+        .navbar-default .navbar-brand {top: 27px; left:35px; width: 85px; height: 35px; margin: 0;}
+        /* gnb */
+        .navbar-default .container .navbar-collapse ul {margin: 33px 36px 0;}
+        .navbar-default .container .navbar-collapse ul li {margin: 0 0 0 38px; padding:0;}
+        .navbar-default .container .navbar-collapse ul li a {text-indent: 0; color: #000; font-size: 18px; line-height: 23.4px;}
+        .navbar-default .container .navbar-collapse ul li a.active {color: #E5150B;}
+        .navbar-default .container .navbar-collapse ul li a.about {width: auto; height: auto; background: none;}
+        .navbar-default .container .navbar-collapse ul li a.pricing {width: auto; height: auto; background: none;}
+        .navbar-default .container .navbar-collapse ul li a.support {width: auto; height: auto; background: none;}
+
+    /*---- Main----*/
+    /* main background */
+    #main #box {top: 1024px; height: 4527.65px;}
+    #main #box .bg_box1 {left: 5%; top: -949px; width: 1050px; height: 4283px;}
+    #main #box .bg_box2 {position: absolute; left: 0; top: -506px; z-index: 1; width: 1700px; height: 628px; -webkit-transform: rotate(11deg); -ms-transform: rotate(11deg); transform: rotate(11deg); background-color: #d9d9d9;}
+    #main #box .bg_box3 {top: 2270px; width: 4174px; height: 1119px; -webkit-transform: translateX(-50%) rotate(12deg); -ms-transform: translateX(-50%) rotate(12deg); transform: translateX(-50%) rotate(12deg);}
+
+    /* section 1. title */
+    #main #title {height: 1024px;}
+        /* title txt */
+        #main #title .txt {width: 640px; padding: 0; margin: 0 64px; transform: translateY(-45%); -webkit-transform: translateY(-45%); -ms-transform: translateY(-45%);}
+        #main #title .txt h2 {max-width: 638px; height: 162px; background: url(../images/text_zet_info.png) no-repeat left top/cover;}
+        #main #title .txt h3 {margin-top: 20px; font-size: 23px; line-height: 32px; font-weight: 500;}
+        #main #title .txt p {margin-top: 35px; font-size: 20px; line-height: 32px;}
+        /* title btn group */
+        #main #title .txt .btn_group {margin-top: 100px;}
+        #main #title .txt .btn_group .btn-group-lg>.btn, .btn-lg {height: 57px; font-size: 16px;}
+        #main #title .txt .btn_group .google_play {width: 213px; margin-right: 24px;}
+        #main #title .txt .btn_group .app_store {width: 196px;}
+        #main #title .txt .btn_group span {padding-left: 38px;}
+        
+    /* section 2. how to */
+    #main #how_to {padding: 120px 37px 110px;}
+        /* how to txt */
+        #main #how_to .row .how_to_txt {text-align: left; width: 400px; padding-top: 40px;}
+        #main #how_to .row .how_to_txt h3 {font-size: 72px; font-weight: 700; line-height: 90px; padding-top: 68px; background-size: 44px 56px; background-position: left top;}
+        #main #how_to .how_to_txt h3 .br_none {display: block;}
+        #main #how_to .how_to_txt p {font-size: 18px; font-weight: 300; line-height: 28px; margin-top: 16px;}
+        /* how to slide */
+        #main #how_to .how_to_slide {width: calc(100% - 400px); padding:0; margin-top: 0;}
+        #main #how_to .how_to_slide .how_to_slide_contents {width: 313px; height: 588px;}
+        #main #how_to .how_to_slide .how_to_slide_contents .swiper-container {top: 26px; left: -19px; width: 242px; height: 517px; border-radius: 34px;}
+        #main #how_to .how_to_slide .how_to_slide_contents .swiper-container .swiper-wrapper .swiper-slide img {width: 242px;}
+        /* how to slide button */
+        #main #how_to .indicator {width: 100%; margin: 91px 0;}
+        #main #how_to .indicator li {padding-right: 46px; background: url(../images/how_to_next.png) no-repeat 91% center; background-size: 19px 13px;}
+        #main #how_to .indicator li:nth-child(3) {padding-right: 46px;}
+        #main #how_to .indicator li:nth-child(4) {padding-right: 0; background: none;}
+        #main #how_to .indicator li:nth-child(4), #main #how_to .indicator li:nth-child(5), #main #how_to .indicator li:nth-child(6) {margin-top: 0;}
+        #main #how_to .indicator li:nth-child(5) {margin: 38px 0 0 185px;}
+        #main #how_to .indicator li:nth-child(6) {margin-top: 38px; background: none;}
+        #main #how_to .indicator li a {width: 139px; height: 92px;}
+        #main #how_to .indicator li a .icon-howto04 {width: 36px; height: 30px; margin-top: 13px;}
+        #main #how_to .indicator li a:after {content: ''; display: block; position: absolute; top:0; left:0; z-index: -1; -webkit-transform: skew(-10deg,0deg); -ms-transform: skew(-10deg,0deg); transform: skew(-10deg,0deg); width: 100%; height: 100%; -webkit-box-sizing: border-box; box-sizing: border-box; border: 2px solid #d9d9d9; border-radius: 20px;}
+        #main #how_to .indicator li a p {font-size: 20px;}
+        #main #how_to .indicator li a svg {width: 32px; height:31px; margin-top:13px;}
+        #main #how_to .indicator li.active a {color: #fff;}
+        #main #how_to .indicator li.active a svg g path {stroke: #fff;}
+        #main #how_to .indicator li.active a:after {border-color: #E5150B; background-color: #E5150B;}
+
+}
