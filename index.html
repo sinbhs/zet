@@ -27,7 +27,7 @@
         <meta name="theme-color" content="#ffffff">
         <!-- fonts -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;800;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
         <!-- font-family:'Noto Sans KR', sans-serif; -->
         <!-- CSS 연결 -->
         <link rel="stylesheet" href="common/normalize.css">
@@ -89,7 +89,6 @@
             </section> <!-- title -->
 
             <section id="how_to" class="sec container">
-
                 <div class="row">
                     <div class="how_to_txt col-sm-6">
                         <h3>ZET는<br><span>어떻게</span><br class="br_none"> 이용하나요?</h3>
@@ -122,6 +121,11 @@
                         </div><!-- swper contents-->
                     </div> <!-- how to slide -->
                 </div><!-- row end -->
+
+                <div class="btn_group_m">
+                    <a href="#" class="btn btn-lg btn-default prev">prev</a>
+                    <a href="#" class="btn btn-lg btn-default next">next</a>
+                </div> <!-- btnr group mobile (모바일 환경에서 나타나는 버튼) -->
 
                 <ul class="indicator">
                     <li class="active">
@@ -161,14 +165,14 @@
                         </a>
                     </li>
                 </ul>
-                <p class="description">ZET 주행하실 때 차량 및 보행자의 안전에 유의해 주세요.</p>
+                <p class="description">가까운 ZET를 찾은 후 대여 버튼을 선택해 주세요.</p>
             </section> <!-- how to -->
 
             <section id="caution" class="sec container-fluid">
                 <div class="row">
                     <div class="caution_txt col-sm-12">
                         <img src="images/caution.png" alt="caution">
-                        <h2>ZET <span>이용 수칙</span></h2>
+                        <h2>ZET<br class="br_none"> <span>이용 수칙</span></h2>
                         <p>ZET 이용 시, 안전을 위해 이것만은 꼭 지켜 주세요!</p>
                     </div>
                     <div class="caution_icon col-sm-12">
@@ -229,38 +233,43 @@
             </section> <!-- caution -->
 
             <section id="location" class="sec">
-                <img src="images/location.png" alt="location">
-                <h2>ZET는 <span>어디서</span> <br class="br_none">이용할 수 있나요?</h2>
-                <p>
-                    ZET는 현재 제주도, 대전 카이스트에서<br class="br_none"> 운영되고 있습니다.<br>
-                    점차적으로 ZET 서비스를 확대해나갈 예정입니다.
-                </p>
-                <div class="map">
-                    <div class="jeju active">
-                        <a href="#">
-                            <div>제주도</div>
-                        </a>
+                <div class="location_box">
+                    <img src="images/location.png" alt="location">
+                    <h2>ZET는 <span>어디서</span> <br class="br_none">이용할 수 있나요?</h2>
+                    <p>
+                        ZET는 현재 제주도, 대전 카이스트에서<br class="br_none"> 운영되고 있습니다.<br>
+                        점차적으로 ZET 서비스를 확대해나갈 예정입니다.
+                    </p>
+                    <div class="map">
+                        <div class="jeju active">
+                            <a href="#">
+                                <div>제주도</div>
+                            </a>
+                        </div>
+                        <div class="daejeon active">
+                            <a href="#">
+                                <div>대전<br>카이스트</div>
+                            </a>
+                        </div>
+                    </div> <!-- map -->
+                    <div class="btn_group">
+                        <button type="button" class="btn btn-lg btn-default btn_jeju active">제주도</button>
+                        <button type="button" class="btn btn-lg btn-default btn_daejeon">대전<br>카이스트</button>
                     </div>
-                    <div class="daejeon active">
-                        <a href="#">
-                            <div>대전<br>카이스트</div>
-                        </a>
-                    </div>
-                </div> <!-- map -->
-                <div class="btn_group">
-                    <button type="button" class="btn btn-lg btn-default btn_jeju active">제주도</button>
-                    <button type="button" class="btn btn-lg btn-default btn_daejeon">대전<br>카이스트</button>
                 </div>
             </section> <!-- location -->
 
             <section id="coupon" class="sec">
-                <img src="images/coupon.png" alt="coupon">
-                <h2>ZET만의<br class="br_none"> <span>특별한 혜택,</span> <br class="br_none">제휴된 상점의<br class="br_none">쿠폰을 받으세요!</h2>
-                <p>
+                <div class="coupon_box">
+                    <img src="images/coupon.png" alt="coupon">
+                    <h2>ZET만의<br class="br_none"> <span>특별한 혜택,</span> <br class="br_none">제휴된 상점의<br>쿠폰을 받으세요!</h2>
+                    <p>
                     ZET 서비스는 각 지역의 상점과 연계하여<br>쿠폰 서비스를 제공하고 있습니다. 저희 서비스와 제휴를 원하시는<br class="br_none"> 분들은 제휴 문의를 통해 문의하실 수 있습니다.
-                </p>
-                <img src="images/coupon_img.png" alt="coupon" class="coupon_img">
-                <button type="button" class="btn btn-lg btn-default">제휴 문의</button>
+                    </p>
+                    <img src="images/coupon_img.png" alt="coupon" class="coupon_img">
+                    <button type="button" class="btn btn-lg btn-default">제휴 문의</button>
+                </div>
+                
             </section> <!-- coupon-->
 
             <section id="box">
@@ -286,11 +295,10 @@
                 <li>통신판매업신고　2002-01546</li>
                 <li>고객 센터　02-6302-7151</li>
             </ul>
-            <p class="license">
+            <!-- <p class="license">
                 본 사이트는 비상업적 용도로 만들어진 포트폴리오용 사이트입니다. 사이트 제작 시 사용된 일부 이미지의 라이센스는 ZET에게 있습니다.
-            </p>
+            </p> -->
             <p class="email">bizlab08@gmail.com</p>
-            <!-- 이메일 앞에 있는 이미지 email.png 이 파일로 쓰면 됩니다용 -->
             <p class="copyright">&copy; Copyright 2019 ZET All rights reserved.</p>
         </footer> <!-- footer -->
     </body>
