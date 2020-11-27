@@ -135,7 +135,7 @@ button::after, .btn_group a::after {content: ''; display: block; position: absol
         #main #caution .caution_icon ul li {position: relative;}
         #main #caution .caution_icon ul li img {width: 257px;}
         #main #caution .caution_icon ul li p {margin-top: 26px; font-size: 16px; font-weight: 500;}
-        #main #caution .caution_icon .riding {position: absolute; top:36px; left:0;}
+        #main #caution .caution_icon .riding {position: absolute; top: 0; left:0;}
         #main #caution .caution_icon .pagination_m_bf {margin-top:22px;}
         #main #caution .caution_icon .pagination_m_bf div {width:10px; height:10px; display: inline-block; border-radius: 100%; background-color: rgba(0, 0, 0, 0.2); margin:0 5px;}
         /* javascript part : swiper pagination active */
@@ -328,4 +328,111 @@ footer {background-color: #f5f5f5; padding: 24px 26px; font-size: 12px;}
     }
 
 /* ---------- pc ---------- */
-@media screen and (min-width: 1441px) {}
+@media screen and (min-width: 1441px) {
+    /*---- PC header ----*/
+    /* logo */
+    .navbar-default .navbar-brand {left: 45px;}
+    /* gnb */
+    .navbar-default .container .navbar-collapse ul {margin-right: 45px;}
+
+    /*---- Main----*/
+    /* main background */
+    #main #box {height: 4543px;}
+    #main #box .bg_box1 {left: 32%; top: -949px;}
+    #main #box .bg_box3 {top: 2490px; height: 1094px; -webkit-transform: translateX(-50%) rotate(10deg); -ms-transform: translateX(-50%) rotate(10deg); transform: translateX(-50%) rotate(10deg);}
+        
+    /* section 2. how to */
+    #main #how_to {margin-bottom: 135px; padding: 0;}
+    #main #how_to .row {position: relative; width: 1194px; padding-top: 184px; margin: 0 auto; }
+        /* how to txt */
+        #main #how_to .row .how_to_txt {padding-left: 84px; box-sizing: content-box;}
+        #main #how_to .row .how_to_txt h3 {font-size: 76px; line-height: 96px;}
+        #main #how_to .how_to_txt p {font-size: 20px; line-height: 32px;}
+        /* how to slide */
+        #main #how_to .how_to_slide {width: calc(100% - 499px); padding-right: 170px;}
+        #main #how_to .how_to_slide .how_to_slide_contents {width: 347px; height: 652px; -webkit-transform: unset; -ms-transform: unset; transform: unset; overflow: unset;}
+        #main #how_to .how_to_slide .how_to_slide_contents::after {content: ''; display: block; position: absolute; bottom: 14px; left: -62px; z-index: 1; width: 329px; height: 216px; background: url(../images/how_to_pc_deco.png) no-repeat left top/cover;}
+        #main #how_to .how_to_slide .how_to_slide_contents .swiper-container {top: 29px; left: -21px; width: 268px; height: 573px; border-radius: 38px;}
+        #main #how_to .how_to_slide .how_to_slide_contents .swiper-container .swiper-wrapper .swiper-slide img {width: 268px;}
+        /* how to slide Icon */
+        #main #how_to .indicator {width: 1194px; margin-top: 40px;}
+        #main #how_to .indicator li {padding-right: 48px;}
+        #main #how_to .indicator li.active {padding-right: 48px; background-image: url(../images/how_to_next_on.png);}
+        #main #how_to .indicator li:nth-child(3), #main #how_to .indicator li:nth-child(4) {padding-right: 48px;}
+        #main #how_to .indicator li:nth-child(4) {background: url(../images/how_to_next.png) no-repeat 91% center; background-size: 19px 13px;}
+        #main #how_to .indicator li:nth-child(5), #main #how_to .indicator li:nth-child(6) {margin: 0;}
+        #main #how_to .indicator li a {width: 159px; height: 106px; font-size: 22px;}
+        #main #how_to .indicator li a svg {width: 36px; height:35px; margin-top:17px;}
+        #main #how_to .indicator li a .icon-howto04 {width: 44px; height: 36px;}
+        #main #how_to .indicator li a .icon-howto06 {width: 43px; height: 37px; margin-top: 17px;}
+        #main #how_to .description {position: relative; width: 1194px; padding-left: 22px; text-align: left;}
+        #main #how_to .description::after {content: ''; display: block; position: absolute; left: 0; top: 50%; width: 10px; height: 10px; margin-top: -5px; border-radius: 50%; background-color: #E2231A;}
+
+        /* section 3. caution */
+        #main #caution {padding-top: 135px;}
+        #main #caution .row {width: 1386px; margin: 0 auto 135px;}
+            /* caution txt */
+            #main #caution .caution_txt {padding-left: 180px;}
+            #main #caution .caution_txt h2 {margin-top: 15px; font-size: 76px; line-height: 96px;}
+            #main #caution .caution_txt p {width: 300px; font-size: 20px; line-height: 32px;}
+            /* caution icon */
+            #main #caution .caution_icon {padding: 0; width: 1386px;}
+            #main #caution .caution_icon ul, #main #caution .caution_icon .riding {width: 1248px; padding-top: 110px; margin: 0 auto;}
+            #main #caution .caution_icon .riding {left: 69px;}
+
+            /* javascript part - 임의로 둔 이미지 width 값 삭제 */
+            #main #caution .caution_icon ul li img {width:306px;}
+
+            #main #caution .caution_icon ul li p {font-size: 20px;}
+            #main #caution .caution_icon .pc_notification {top: -30px; right: 160px; padding: 18px 22px 36px 30px; background-position: 76% 56px; background-size: 25px auto; font-size: 20px;}
+            #main #caution .caution_icon .pc_notification::after {height: 62px; background-color: #1f2228; border-radius: 15px;}
+                /* btn group pc */
+                #main #caution .caution_icon .btn_group_pc {display: block; position: absolute; top: 52%; left: 50%; width: 100%; transform: translateX(-50%); display: flex; justify-content: space-between;}
+                #main #caution .caution_icon .btn_group_pc a {display: block; width: 54px; border: none; text-indent: -9999px;}
+                #main #caution .caution_icon .btn_group_pc .prev {background: url(../images/btn_prev.png) no-repeat; background-size: contain;}
+                #main #caution .caution_icon .btn_group_pc .next {background: url(../images/btn_next.png) no-repeat; background-size: contain;}
+
+        /* section 4. location */
+        #main #location {padding: 130px 0 0;}
+        #main #location .location_box {width: 1067px; height: 858px; padding: 0;}
+        #main #location h2 {font-size: 76px; line-height: 96px;}
+        #main #location p {font-size: 20px; line-height: 32px; margin-top: 20px;}
+        #main #location .map {width: 372px; height: 660px; bottom: -52px;}
+        /* location btn */
+        #main #location .btn_group {margin-top: 100px;}
+        #main #location .btn_group .btn-lg {width: 164px; height: 96px; font-size: 30px;}
+            /* jeju */
+            #main #location .map .jeju {width: 105px; height: 52px;}
+            #main #location .map .jeju.active {background-size: 96px 47px; background-position: 8px bottom;}
+            #main #location .map .jeju.active a div {top: -90px; width: 141px; padding: 19px 0 41px; font-size:26px; line-height: 26px;}
+            /* daejeon */
+            #main #location .map .daejeon {top: 284px; left: 123px; width: 33px; height: 33px;}
+            #main #location .map .daejeon.active a div {top: -91px; left: -40px; width: 141px; padding: 8px 0 26px; font-size: 24px; line-height: 26px;}
+
+        /* section 5. coupon */
+        #main #coupon {padding-top: 0;}
+        #main #coupon::after {top: 0; width: 1468px; height: 718px; background: url(../images/coupon_bg_pc.png) no-repeat left top;}
+        #main #coupon .coupon_box {position: relative; width: 1070px; padding-top: 242px; margin: 0 auto 80px;}
+        #main #coupon h2 {font-size: 76px; line-height: 96px;}
+        #main #coupon h2 .br_none {display: block;}
+        #main #coupon p {margin: 16px 0 0; font-size: 20px; line-height: 32px; width: 530px;}
+        #main #coupon .coupon_img {position: absolute; top: 390px; right: 0; width: 391px; height: 366px; margin: 0;}
+        #main #coupon button {margin: 100px 0 0;}
+
+        /* footer */
+        footer {padding: 36px 0;}
+        footer .footer_box {width: 1212px; margin: 0 auto; display: flex; flex-direction: column; align-items: flex-end;}
+        /* customer service */
+        footer .footer_sub1 li {padding-left: 24px;}
+        footer .footer_sub1 li:nth-child(3), footer .footer_sub1 li:nth-child(5) {padding-left: 24px;}
+        footer .footer_sub1 li::after {left: 11px; top: 4px;}
+        /* company */
+        footer .footer_sub2 {width: 400px; display: flex; flex-wrap: wrap;}
+        footer .footer_sub2 li {padding: 2px;}
+        footer .footer_sub2 li:first-child {margin-right: 85px;}
+        footer .footer_sub2 li:nth-child(3) {margin-right: 35px;}
+        /* contact */
+        footer .contact {display: flex; width: 400px; margin-top: 10px;}
+        footer .email {margin-right: 14px;}
+        footer .email, footer .copyright {margin-top: 0;}
+}
