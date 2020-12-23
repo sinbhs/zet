@@ -9,15 +9,17 @@
 - 본 사이트는 상업적 용도가 아닌 **포트폴리오 목적**으로 리뉴얼 제작된 사이트이며 일부 이미지와 문구등의 저작권은 Zet에 있음을 알립니다.
 
 ## Web Structure
-- Index (about Zet)
-- Pricing
-- Support
+- [Index](https://sinbhs.github.io/zet/)
+- [Pricing](https://sinbhs.github.io/zet/pricing.html)
+- [Support](https://sinbhs.github.io/zet/support.html)
 
 ## Contribution
-- 메인 페이지
-    - HTML5 : 0% 
+- index
+    - HTML5
         - CSS 작업 중 발생하는 자잘한 변경 사항(폰트 굵기 추가, Class명 추가, HTML 마크업 요소 수정, 오타 수정, 이미지 추가)
     - CSS3 : 100%
+- pricing 페이지 nav 스크롤 이벤트를 위한 CSS와 JS 구현
+- support 페이지 accordian 메뉴 움직임 JS 작업
 
 ## Contact
 - 함께 나눌 이야기가 있으시다면, 아래의 이메일로 연락주세요!
