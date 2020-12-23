@@ -9,11 +9,13 @@
         $('.btn-menu').css('display','none');
         $('.btn-menu-close').css('display','block');
         $('.nav_bg').css('display','block');
+        $('html').css('overflow', 'hidden');
     });
     $('.btn-menu-close').click(function(){
         $('.btn-menu-close').css('display','none');
         $('.btn-menu').css('display','block');
         $('.nav_bg').css('display','none');
+        $('html').css('overflow', 'initial');
     });
 
 

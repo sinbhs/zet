@@ -1,35 +1,41 @@
 $(document).ready(function(){
-
     $('a[href="#"]').click(function(e){
-                        e.preventDefault();
-                       });
+        e.preventDefault();
+    });
 
-        //nav 버튼 변경, 배경색
+    //nav 버튼 변경, 배경색
     $('.btn-menu').click(function(){
         $('.btn-menu').css('display','none');
         $('.btn-menu-close').css('display','block');
         $('.nav_bg').css('display','block');
-        $('body').addClass('lock');
+        $('html').css('overflow', 'hidden');
     });
     $('.btn-menu-close').click(function(){
         $('.btn-menu-close').css('display','none');
         $('.btn-menu').css('display','block');
         $('.nav_bg').css('display','none');
-        $('body').removeClass('lock');
+        $('html').css('overflow', 'initial');
     });
 
     //accodian menu
-    $('.faq-board').find('a').on('click',function(){
-        var inx= $(this).parents('li').index();
-        $(this).parents('li').addClass('on').siblings().removeClass('on');
-        if($(this).parents('li').is(':visible')){
-            $(this).next().slideUp();
-            $('.support-faq-img').find('li').removeClass('on');
+    $('.faq-box').hide();
+
+    $('.faq-list a').on('click',function(e){
+        e.preventDefault();
+
+        var inx = $(this).parents('li').index();
+
+        const style = $(this).parents('li').hasClass('on');
+        if(style == false) {//닫힌 상태인 리스트 클릭
+            $('.faq-list a').parents('li').removeClass('on');
+           $(this).parents('li').addClass('on');
+           $('.faq-box').stop().slideUp();
+           $(this).siblings('.faq-box').stop().slideDown();
+           $('.support-faq-img').find('li').eq(inx).addClass('on').siblings().removeClass('on');
+        } else {//열린 상태인 리스트 클릭
+           $(this).parents('li').removeClass('on');
+           $('.faq-box').stop().slideUp();
+            $('.support-faq-img').find('li').eq(inx).removeClass('on');
         }
-        $('.faq-list p').slideUp();
-        $(this).next().slideDown();
-        $('.support-faq-img').find('li').eq(inx).addClass('on').siblings().removeClass('on');
     });
-    //accodian menu
-  
 });
