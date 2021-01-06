@@ -124,16 +124,18 @@ button::after, .btn_group a::after {content: ''; display: block; position: absol
     #main #caution .caution_txt p {font-size: 14px; line-height: 22px; margin-top:10px;}
     /* caution btn + icon */
     #main #caution .caution_icon {margin-top: 34px; position: relative; padding: 0;}
-    #main #caution .caution_icon .icon_group {display: -webkit-box; display:  -ms-flexbox; display: flex; overflow: hidden;}
         /* btn */
         #main #caution .caution_icon .btn_group_m a {width:134px; height: 36px; line-height: 36px; font-size: 14px; font-weight: 500; color:#757575; padding: 0; margin-right: 7px;}
         #main #caution .caution_icon .btn_group_m a:active, #main #caution .caution_icon .btn_group_m a:hover, #main #caution .caution_icon .btn_group_m a:focus, #main #caution .caution_icon .btn_group_m a.active {color:#fff;}
         #main #caution .caution_icon .btn_group_m a::after {border: 0.15em solid #D9D9D9; border-radius: 7px; z-index: -1;}
         #main #caution .caution_icon .btn_group_m a:active::after, #main #caution .caution_icon .btn_group_m a:hover::after, #main #caution .caution_icon .btn_group_m a:focus::after, #main #caution .caution_icon .btn_group_m a.active::after {border-color: #E5150B; background-color: #E5150B;}
+
         /* swiper */
+        #main #caution .caution_icon .swiper-container, #main #caution .caution_icon .second-container {padding-bottom: 42px; overflow: hidden;}
+        #main #caution .second-container .swiper-pagination, #main #caution .third-container {display: none;}
         #main #caution .caution_icon .btn_group_pc {display: none;}
         #main #caution .caution_icon .pc_notification {display: none;}
-        /* javascript part - swiper */
+        
         #main #caution .caution_icon ul {padding-top: 36px; display: flex;}
         #main #caution .caution_icon ul li {position: relative; width: 100vw;}
         #main #caution .caution_icon ul li img {width: 257px;}
@@ -141,8 +143,9 @@ button::after, .btn_group a::after {content: ''; display: block; position: absol
         #main #caution .caution_icon .riding {display: none;}
         #main #caution .caution_icon .pagination_m_bf {margin-top:22px;}
         #main #caution .caution_icon .pagination_m_bf div {width:10px; height:10px; display: inline-block; border-radius: 100%; background-color: rgba(0, 0, 0, 0.2); margin:0 5px;}
-        /* javascript part : swiper pagination active */
         #main #caution .caution_icon .pagination_m_bf div.active {background-color: #E5150B;}
+        .swiper-pagination-bullet {background-color: #E5150B;}
+
 
 /* section 4. location */
 #main #location {position: relative; width: 100%; padding-top: 65px; margin: 0 auto 60px; text-align: center;}
@@ -282,6 +285,15 @@ footer {background-color: #f5f5f5; padding: 24px 26px; font-size: 12px;}
         /* section 3. caution */
         #main #caution {padding-top:110px;}
         #main #caution .row {width: 704px; margin: 0 auto;}
+            /* swiper */
+            #main #caution .caution_icon .swiper-container, #main #caution .caution_icon .second-container {display: none;}
+            #main #caution .third-container {display: block; padding-bottom:80px; overflow: hidden;}
+            #main #caution .caution_icon ul {padding-top: 105px;}
+            #main #caution .third-container ul li {display: flex; justify-content: space-between; width: 100%;}
+            #main #caution .third-container ul li .pc_notification {opacity: 0; -webkit-transition: opacity 0.5s 0.4s; transition: opacity 0.5s 0.4s;}
+            #main #caution .third-container ul .swiper-slide-active .pc_notification {opacity: 1;}
+            .swiper-pagination-bullet {width: 10px; height: 10px;}
+
             /* caution txt */
             #main #caution .caution_txt {text-align:left;}
             #main #caution .caution_txt img {width: 71px; height: 63px;}
@@ -289,11 +301,13 @@ footer {background-color: #f5f5f5; padding: 24px 26px; font-size: 12px;}
             #main #caution .caution_txt h2 br {display: block;}
             #main #caution .caution_txt p {width: 270px; font-size: 18px; line-height: 28px; margin-top: 16px;}
             /* caution icon */
-            #main #caution .caution_icon {position: relative; margin-top:0; padding-top: 105px;}
+            #main #caution .caution_icon {position: relative; margin-top:0; padding-top: 25px;}
+            #main #caution .caution_icon ul li img {width: 210px;}
             #main #caution .caution_icon .btn_group_m {display: none;}
-            #main #caution .caution_icon .pc_notification {position:absolute; top: -35px; right: 40px; display: inline-block; padding: 16px 24px 30px 24px; background: url(../images/pc_notification.png) no-repeat 76% 56px; background-size: 25px auto; font-size:18px; font-weight:700; color:#fff;}
+            #main #caution .caution_icon .pc_notification {position:absolute; top: -120px; right: 10px; display: inline-block; padding: 16px 24px 30px 24px; background: url(../images/pc_notification.png) no-repeat 76% 56px; background-size: 25px auto; font-size:18px; font-weight:700; color:#fff;}
             #main #caution .caution_icon .pc_notification::after {content: ''; display: block; position: absolute; top:0; left:0; z-index: -1; width: 100%; height: 56px; background-color: #000; border-radius: 12px; -webkit-transform: skew(-10deg,0deg); -ms-transform: skew(-10deg,0deg); transform: skew(-10deg,0deg);}
             #main #caution .caution_icon .pagination_m_bf div:last-of-type {display: none;}
+            #main #caution .caution_icon .swiper-button-prev, #main #caution .caution_icon .swiper-button-next {display: none;}
 
         /* section 4. location */
         #main #location {padding: 140px 0 0; text-align:left;}
@@ -381,16 +395,20 @@ footer {background-color: #f5f5f5; padding: 24px 26px; font-size: 12px;}
             #main #caution .caution_txt p {width: 300px; font-size: 20px; line-height: 32px;}
             /* caution icon */
             #main #caution .caution_icon {padding: 0; width: 1386px;}
+            #main #caution .third-container {width: 1248px; margin: 0 auto;}
+            #main #caution .third-container ul li {justify-content: space-around;}
+            #main #caution .caution_icon ul li img {width: 306px;}
             #main #caution .caution_icon ul, #main #caution .caution_icon .riding {width: 1248px; padding-top: 110px; margin: 0 auto;}
             #main #caution .caution_icon ul li p {font-size: 20px;}
-            #main #caution .caution_icon .pc_notification {top: -30px; right: 160px; padding: 18px 22px 36px 30px; background-position: 76% 56px; background-size: 25px auto; font-size: 20px;}
+            #main #caution .caution_icon .pc_notification {top: -130px; right: 100px; padding: 18px 22px 36px 30px; background-position: 76% 56px; background-size: 25px auto; font-size: 20px;}
             #main #caution .caution_icon .pc_notification::after {height: 62px; background-color: #1f2228; border-radius: 15px;}
+            .swiper-pagination-bullet {width: 12px; height: 12px;}
                 /* btn group pc */
-                #main #caution .caution_icon .btn_group_pc {display: block; position: absolute; top: 52%; left: 50%; width: 100%; transform: translateX(-50%); display: flex; justify-content: space-between;}
-                #main #caution .caution_icon .btn_group_pc a {display: block; width: 54px; border: none; text-indent: -9999px;}
-                #main #caution .caution_icon .btn_group_pc a::after {display: none;}
-                #main #caution .caution_icon .btn_group_pc .prev {background: url(../images/btn_prev.png) no-repeat; background-size: contain;}
-                #main #caution .caution_icon .btn_group_pc .next {background: url(../images/btn_next.png) no-repeat; background-size: contain;}
+                #main #caution .caution_icon .swiper-button-prev, #main #caution .caution_icon .swiper-button-next {display: block;}
+                .swiper-button-next, .swiper-button-prev {width: 54px;}
+                .swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after,.swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after {content: none;}
+                .swiper-button-next {background: url(../images/btn_next.png) no-repeat; background-size: contain;}
+                .swiper-button-prev {background: url(../images/btn_prev.png) no-repeat; background-size: contain;}
 
         /* section 4. location */
         #main #location {padding: 130px 0 0;}
