@@ -1,10 +1,10 @@
   $(document).ready(function(){
 
     $('a[href="#"]').click(function(e){
-                        e.preventDefault();
-                       });
+        e.preventDefault();
+    });
 
-        //nav 버튼 변경, 배경색
+    //nav 버튼 변경, 배경색
     $('.btn-menu').click(function(){
         $('.btn-menu').css('display','none');
         $('.btn-menu-close').css('display','block');
@@ -57,6 +57,7 @@
     });
 
 
+
     /* section 3. caution */
     $('#main #caution .caution_icon .btn_group_m a.caution_btn1').click(function(){
         $('#main #caution .caution_icon .btn_group_m a').removeClass('active');
@@ -102,22 +103,19 @@
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
-          },
+        },
         pagination: {
             el: '.swiper-pagination',
             clickable: true
-        },
-        breakpoints: {
-            //when window width is >= 1440
-            1440: {
-                autoplay: false
-            }
         }
     });
-    
+
+    var width = $(window).width();
+    if(width >= 1440) {
+        thirdswiper.autoplay.stop();
+    }
 
     //location map
-
     var btn_daejeon = $('#main #location .btn_group .btn_daejeon');
     var btn_jeju = $('#main #location .btn_group .btn_jeju');
     var map_daejeon = $('#main #location .map .daejeon');
